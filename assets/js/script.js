@@ -4,6 +4,8 @@ let youtubeApiKeys = ["AIzaSyDSRVOnBgzTFsC6Z5pNddA4XFXFgIcT0lE", "AIzaSyDlQ_C_XH
 const API_KEY = youtubeApiKeys[Math.floor(Math.random() * youtubeApiKeys.length)];
 
 
+const welcome = document.querySelector(".welcome");
+
 
 // swiper part
 
