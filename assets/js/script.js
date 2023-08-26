@@ -7,6 +7,32 @@ const API_KEY = youtubeApiKeys[Math.floor(Math.random() * youtubeApiKeys.length)
 const welcome = document.querySelector(".welcome");
 
 
+// Calling bored api to get a random activity
+const boredApi = function (customURL) {
+    fetch(`https://www.boredapi.com/api/activity${customURL}`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (boredapi) {
+            if (boredapi.activity === undefined) {
+                resultsHeader.textContent = "Sorry, no results found. Please try again.";
+                return;
+            }
+
+            boredActivity = boredapi.activity;
+            resultsHeader.textContent = "Activity: " + boredActivity;
+
+            youTubeApi(boredapi);
+        }); 
+};
+
+// Calling youtube api to get a video based on the activity from bored api
+const youTubeApi = function (boredapi) {
+    
+};
+
+
+
 // swiper part
 
 // var swiper = new Swiper(".swiper", {
