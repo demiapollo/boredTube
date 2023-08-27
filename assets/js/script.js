@@ -28,9 +28,25 @@ const boredApi = function (customURL) {
 
 // Calling youtube api to get a video based on the activity from bored api
 const youTubeApi = function (boredapi) {
-    
+    fetch (`${url}?key=${API_KEY}&type=video&part=snippet&maxResults=5&q=${boredapi.activity}`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (newdata) {
+            data = newdata;
+            displayVideos(data);
+        });
 };
 
+// Displaying the video on the page
+const displayVideos = function (data) {
+    navigate(0);
+};
+
+// Function to navigate through the videos
+function navigate(direction) {
+    
+};
 
 
 // swiper part
