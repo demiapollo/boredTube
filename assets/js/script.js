@@ -7,6 +7,9 @@ const API_KEY =
   youtubeApiKeys[Math.floor(Math.random() * youtubeApiKeys.length)];
 
 const welcome = document.querySelector(".welcome");
+const carousel = document.querySelector(".carouselbox");
+const next = document.querySelector(".next");
+const back = document.querySelector(".back");
 
 // Calling bored api to get a random activity
 const boredApi = function (customURL) {
@@ -67,6 +70,21 @@ function navigate(direction) {
 }
 
 // Event listeners for the back and next buttons
+carousel.addEventLister("click", function () {
+  window.location.href = data[index];
+}); 
+
+next.addEventListener("click", function (event) {
+  event.stopPropogation();
+  navigate(1);
+});
+
+back.addEventListener("click", function (event) {
+  event.stopPropogation();
+  navigate(-1);
+});
+
+
 
 
 // swiper part
