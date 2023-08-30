@@ -85,7 +85,16 @@ back.addEventListener("click", function (event) {
 });
 
 
+// activity type part
+function activityTypeChoice (objButton1) {
+  const activityType = objButton1.value;
+  $(".activityType").fadeOut(1000);
+  setTimeout(() => {
+    $("#soloOrGroup").fadeIn(1000).css("display", "flex");
+  }, 1000); 
+}
 
+// cost part
 
 // swiper part
 
