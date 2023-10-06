@@ -1,3 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 2% auto;
+    padding: 5% 20%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+
+button#prev, button#next {
+    /* Hide buttons initiall untill the videos are loaded */
+    display: none;
+    
+}
+
+#carousel {
+    display: flex;
+    overflow: scroll;
+    width: 80%;
+    margin: 3% auto;
+    
+}
+
+#activity {
+    font-size: 18px;
+    margin-top: 20px;
+}
 
 
 

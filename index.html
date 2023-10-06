@@ -1,76 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <!-- Bootstrap and custom css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Welcome -->
-    <section id="welcome">
-      <h1>Welcome to Bored Tube</h1>
-      <p>Do you want to discover something new to try or learn?</p>
-      <button type="button" class="btn btn-outline-info">
-        Find Something New
-      </button>
-    </section>
-
-    <!-- Choosing the type of activity -->
-    <section id="activityType">
-      <h2>Choose a category you are interested in</h2>
-      <div>
-        <button>Education</button>
-        <button>Recreational</button>
-        <button>Social</button>
-        <button>DIY</button>
-        <button>Charity</button>
-        <button>Cooking</button>
-        <button>Relaxation</button>
-        <button>Music</button>
-      </div>
-    </section>
-
-    <!-- Solo or group -->
-    <section id="soloGroup">
-      <h2>Do you prefer a solo or group activity?</h2>
-      <div class="options">
-        <button>Solo</button>
-        <button>Group</button>
-      </div>
-    </section>
-
-    <!-- Free or paid -->
-    <section id="freePaid">
-      <h2>Do you prefer a free or paid activity?</h2>
-      <div class="options">
-        <button>Free</button>
-        <button>Paid</button>
-      </div>
-    </section>
-
-    <!-- Search results  -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-one"></div>
-        <div class="swiper-slide swiper-slide-two"></div>
-        <div class="swiper-slide swiper-slide-three"></div>
-        <div class="swiper-slide swiper-slide-four"></div>
-        <div class="swiper-slide swiper-slide-five"></div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Activity Video Finder</title>
+</head>
+<body>
+    <h1>Find Videos for Random Activities</h1>
+    <button id="generate">Generate Random Activity</button>
+    <p id="activity"></p>
+    <div id="carousel">
+        <!-- YouTube videos will be appended here dynamically -->
     </div>
-    <!-- add pagination -->
-    <div class="swiper-pagination"></div>
-
-
-
-  </body>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
