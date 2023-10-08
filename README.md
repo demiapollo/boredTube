@@ -26,4 +26,4 @@ You can start discovering by clicking on the 'Generate Random Activity' button. 
 
 ## Links
 - [GitHub Repository](https://github.com/demiapollo/boredTube)
-- [Deployed Application]()
+- [Deployed Application](https://demiapollo.github.io/boredTube/)
