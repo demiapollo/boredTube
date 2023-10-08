@@ -15,6 +15,7 @@ button {
 button#prev, button#next {
     /* Hide buttons initiall untill the videos are loaded */
     display: none;
+    width: 6rem;
     
 }
 

@@ -43,6 +43,9 @@ function displayVideos(videos) {
         carousel.appendChild(videoElement);
         // center videos
         videoElement.style.transform = `translateX(${-100 * videos.length}%)`;
+        // Add a thin border between videos
+        videoElement.style.border = '1px solid lightgrey';
+
         // show carousel buttons with videos
         document.getElementById('prev').style.display = 'inline-block';
         document.getElementById('next').style.display = 'inline-block';
